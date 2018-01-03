@@ -1,3 +1,22 @@
-.border{ border: 1px solid #ccc;padding:5% 10%;}
+.border{ border: 1px solid #ccc;}
 .panel-heading{text-align: center;color: #0e90d2;font-weight: bold;font-size: 18px;margin-bottom: 20px;}
-.form-group{ margin: 0 auto;width: 60%;}
+.form-group{ margin:10px auto;height: 30px; text-align: center}
+.form-group label,.form-group input{height: 30px;font-size: 15px;}
+ul.def_index_ul{ margin:0 0px;}
+.def_inde_img{height: 180px;}
+.def_inde_img img{  float: left;width: 100%;}
+@media (min-width: 992px){
+    .col-md-offset-2 {  margin-left: 0%;}
+    .col-md-8 {  width: 100%;  }
+}
+.footer-link ul li{float: left ;margin-left: 20px;}
+.footer-link ul li a{ color: #fff;}
+.footer-link ul li a:hover{ color:#337ab7;}
+.def_footer{width: 100%;background:#959595 ;color: #fff;}
+
+.line_vertial{width: 1px;background: #fff;min-height: 60px;}
+.main{background: url(/images/container-bg.jpg)  100% 100%;}
+.main h4{color: green;padding: 12px 12px;background: #fff;opacity: 0.8;margin: 0 0;}
+.index_form{padding: 10% 10%;}
+.nav-justified {  margin-bottom: 5px;}
+.list-group{margin:0px 0px;}

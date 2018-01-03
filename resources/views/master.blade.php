@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> @yield('title') </title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap.css">
     <link rel="stylesheet" href="/css/main.css">
     <script src="/bootstrap/js/bootstrap.js"></script>
     <style type="text/css">.red{  color: red;}</style>
