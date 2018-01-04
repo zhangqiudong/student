@@ -11,11 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+Route::get('/',['as'=>'home','uses'=>'Controller@home']);
 Route::get('login',['middleware'=>'guest','as'=>'login','uses'=>'loginController@loginGet']);
 Route::post('login', [
     'middleware' => 'guest', 'uses' => 'loginController@loginPost']);

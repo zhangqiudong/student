@@ -25,12 +25,17 @@
                 <div class="" style="width:28%;float: left">
                     <h4 style="font-weight: bold;">学校通知</h4>
                     <div class="def_inde_img"><img  src="/images/logo_2.jpg" style="float: left;"/></div>
+                    {{--<ul class="list-group def_index_ul">--}}
+                        {{--<li class="list-group-item">Cras justo odio</li>--}}
+                        {{--<li class="list-group-item">Dapibus ac facilisis in</li>--}}
+                        {{--<li class="list-group-item">Morbi leo risus</li>--}}
+                        {{--<li class="list-group-item">Porta ac consectetur ac</li>--}}
+                        {{--<li class="list-group-item">Vestibulum at eros</li>--}}
+                    {{--</ul>--}}
                     <ul class="list-group def_index_ul">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
+                    @foreach ($news as $new)
+                        <li class="list-group-item"><a href="#">({{$new->id}}).{{$new->title}}</a> </li>
+                    @endforeach
                     </ul>
                 </div>
                 <div class="" style="width:28%;float: left">
