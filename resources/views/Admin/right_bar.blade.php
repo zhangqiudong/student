@@ -6,6 +6,8 @@
     <br /><br />
     <a href="/admin/grade"><button class="btn btn-info btn-lg">成绩排名</button></a>
     <br /><br />
+    <a href="/admin/addnews"><button class="btn btn-info btn-lg">添加通知</button></a>
+    <br /><br />
     {{--<a href="{{ URL::route('download_stu_list_excel') }}"><button class="btn btn-default btn-lg">下载名单</button></a>--}}
     {{--<br /><br />--}}
     {{--<a href="{{ URL::route('download_grade_list_excel') }}"><button class="btn btn-lg btn-default">导出成绩</button></a>--}}

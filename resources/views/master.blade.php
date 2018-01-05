@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
     <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src="/js/jquery-1.7.2.min.js"></script>
+    <script src="/js/maps.js"></script>
     <style type="text/css">.red{  color: red;}</style>
 </head>
-<body>
-<div class="container-fluid" style="width: 90%; margin: 0 auto;">
+<body onload="onLoad()">
+<div class="container-fluid" style="width: 90%; margin: 0 auto;min-height:820px; ">
 
     @include('header')
 

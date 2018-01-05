@@ -18,7 +18,7 @@
                     @endif
 
 
-            <li role="presentation"> <a href="#">帮助</a></li>
+            <li role="presentation"> <a href="/help">帮助</a></li>
         </ul>
     </div>
 </div>

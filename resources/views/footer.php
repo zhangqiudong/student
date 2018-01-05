@@ -1,9 +1,9 @@
 <div class="panel-footer def_footer">
     <div class="span7 footer-link">
       <ul>
-          <li>中国少儿</li>
-          <li>中国少儿</li>
-          <li>中国少儿</li>
+          <li><img src="#" /></li>
+          <li><img src="#" /></li>
+          <li><img src="#" /></li>
       </ul>
 
     </div>

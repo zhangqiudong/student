@@ -15,6 +15,8 @@
 //    return view('welcome');
 //});
 Route::get('/',['as'=>'home','uses'=>'Controller@home']);
+Route::get('/help',['as'=>'help','uses'=>'Controller@help']);
+
 Route::get('login',['middleware'=>'guest','as'=>'login','uses'=>'loginController@loginGet']);
 Route::post('login', [
     'middleware' => 'guest', 'uses' => 'loginController@loginPost']);
@@ -33,6 +35,10 @@ Route::post('stu/update', [
 Route::get('admin/grade',['as'=>'grade_list','uses'=>'Admin\GradeController@index']);
 Route::post('admin/upload_grade',['uses'=>'Admin\GradeController@upload_grade']);
 Route::resource('admin','Admin\AdminController');
+
+
+Route::post('admin/uploadnews',['uses'=>'Admin\NewsController@addnews']);
+Route::post('admin/uploadnews',['uses'=>'Admin\NewsController@upload_news']);
 
 Route::get('Admin/search',['as'=>'search','uses'=>'Admin\adminController@search']);
 

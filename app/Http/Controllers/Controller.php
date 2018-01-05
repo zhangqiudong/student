@@ -17,5 +17,10 @@ class Controller extends BaseController
         $news = DB::table('news')->where('author','教务处')->get();
         return view('welcome',compact('news'));
     }
+    public function help(){
+
+        return view('help');
+    }
+
 
 }

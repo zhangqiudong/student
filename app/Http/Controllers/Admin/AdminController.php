@@ -58,5 +58,10 @@ class AdminController extends Controller
         $count = $result->count();
         return view('Admin.search',compact('count','users'));
     }
+    public function show(){
+        $result = User::where('is_admin',0);
+        $count = $result->count();
+        return view('Admin.addnews',compact('count'));
+    }
 
 }

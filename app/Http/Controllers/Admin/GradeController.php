@@ -27,7 +27,7 @@ class GradeController extends Controller
         $grade->math= $request->math;
         $grade->c=$request->c;
         $grade->sport= $request->sport;
-        $grade->english= $request->enhlish;
+        $grade->english= $request->english;
         $grade->think= $request->think;
         $grade->soft= $request->soft;
         $grade->save();
