@@ -18,12 +18,12 @@ del,ins,u,s,a,a:hover{text-decoration:none;}
 body,textarea,input,button,select,keygen,legend{font: normal 14px Microsoft Yahei, Arial, Helvetica, sans-serif;color:#333;outline:0 none;}
 input,textarea,select{outline: none; border: none; background-color: transparent;}
 body{background:rgb(255,255,255);}
-a{color:#333; text-decoration: none; cursor: default;}
-a:link{color:#333; text-decoration: none;}
-a:active{color:#333; text-decoration: none;}
-a:focus{color:#333; text-decoration: none;}
-a:visited{color:#333; text-decoration: none;}
-a:hover{color:#333; text-decoration: none;}
+/*a{color:#333; text-decoration: none; cursor: default;}*/
+/*a:link{color:#333; text-decoration: none;}*/
+/*a:active{color:#333; text-decoration: none;}*/
+/*a:focus{color:#333; text-decoration: none;}*/
+/*a:visited{color:#333; text-decoration: none;}*/
+/*a:hover{color:#333; text-decoration: none;}*/
 .clearfix {*zoom: 1;}
 .clearfix:after {
     content: "\00A0";

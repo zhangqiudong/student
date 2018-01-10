@@ -28,11 +28,11 @@
                             <td>{{$user->id}}</td>
                             <td>{{$user->name}}</td>
                             <td>{{$user->grade->math}}</td>
-                            {{--<td>{{$user->grade->english}}</td>--}}
-                            {{--<td>{{$user->grade->c}}</td>--}}
-                            {{--<td>{{$user->grade->sport}}</td>--}}
-                            {{--<td>{{$user->grade->think}}</td>--}}
-                            {{--<td>{{$user->grade->soft}}</td>--}}
+                            <td>{{$user->grade->english}}</td>
+                            <td>{{$user->grade->c}}</td>
+                            <td>{{$user->grade->sport}}</td>
+                            <td>{{$user->grade->think}}</td>
+                            <td>{{$user->grade->soft}}</td>
                         </tr>
                     @endforeach
                 </table>

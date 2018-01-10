@@ -4,43 +4,26 @@
 @stop
 @section('content')
 
-    <div class="row-fluid">
-        <ul class="nav nav-pills nav-justified">
-            <li role="presentation" class="active"><a href="#">首页</a></li>
-            <li role="presentation"><a href="#">家庭教育</a></li>
-            <li role="presentation"><a href="#">文学素养</a></li>
-            <li role="presentation"><a href="#">文学素养</a></li>
-            <li role="presentation"><a href="#">好人好事</a></li>
-            <li role="presentation"><a href="#">作业辅导</a></li>
-            <li role="presentation"><a href="#">宝贝心里话</a></li>
-            <li role="presentation"><a href="#">宝贝成长</a></li>
-        </ul>
-    </div>
+    @include('nav')
+
     <div class="row-fluid">
         <img alt="140x140" src="/images/logo_3.jpg" width="100%"/>
     </div>
     <div class="row-fluid main">
         <div class="span8">
             <div class="row-fluid">
-                <div class="" style="width:28%;float: left">
-                    <h4 style="font-weight: bold;">学校通知</h4>
-                    <div class="def_inde_img"><img  src="/images/logo_2.jpg" style="float: left;"/></div>
-                    {{--<ul class="list-group def_index_ul">--}}
-                        {{--<li class="list-group-item">Cras justo odio</li>--}}
-                        {{--<li class="list-group-item">Dapibus ac facilisis in</li>--}}
-                        {{--<li class="list-group-item">Morbi leo risus</li>--}}
-                        {{--<li class="list-group-item">Porta ac consectetur ac</li>--}}
-                        {{--<li class="list-group-item">Vestibulum at eros</li>--}}
-                    {{--</ul>--}}
+                <div class="index_notice">
+                    <div class="notices_logo"><a href="/news/list"> <div><img src="/images/message.png" /></div> <h4>学校通知 / NOTICES</h4></div></a>
+                    <div class="def_inde_img"><img  src="/images/logo_2.jpg" /></div>
                     <ul class="list-group def_index_ul">
                     @foreach ($news as $new)
                         <li class="list-group-item"><a href="#">({{$new->id}}).{{$new->title}}</a> </li>
                     @endforeach
                     </ul>
                 </div>
-                <div class="" style="width:28%;float: left">
-                    <h4 style="color: blue;font-weight: bold;">最新通知</h4>
-                    <div class="def_inde_img"><img src="/images/logo_3.jpg" width="100%" style="float: left;"/></div>
+                <div class="index_articles">
+                    <div class="articles_logo"> <div><img src="/images/holiday-diary.png" /></div><h4>宝贝文章 / ARTICLES</h4></div>
+                    <div class="def_inde_img"><img src="/images/logo_3.jpg"  /></div>
                     <ul class="list-group def_index_ul">
                         <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
                         <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
@@ -49,22 +32,22 @@
                         <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
                     </ul>
                 </div>
-                <div class="" style="width:44%;float: left">
-                    <h4 style="color: purple;font-weight: bold;">最新要闻</h4>
-                    <div class="def_inde_img"><img  src="/images/logo_1.jpg" width="100%" style="float: left;"/></div>
+                <div class="index_news">
+                    <div class="news_logo"> <div><img src="/images/news.png" /></div> <h4>最新要闻 / NEWS</h4></div>
+                    <div class="def_inde_img"><img  src="/images/logo_1.jpg" /></div>
                     <div class="list-group">
-                        <a href="#" class="list-group-item active">
-                            Cras justo odio
-                        </a>
-                        <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                        <a href="#" class="list-group-item">Morbi leo risus</a>
-                        <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                        <a href="#" class="list-group-item">Vestibulum at eros</a>
+                        <ul class="list-group def_index_ul">
+                            <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+                            <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+                            <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+                            <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+                            <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="span4 border"style="margin-left: 0px;width: 34%;background: #fff;height: 429px;">
+        <div class="span4 border index_login" style="width: 499px;margin-left: 0px;">
             <div class="col-md-8 col-md-offset-2 index_form">
                 <div class="panel panel-default" >
                     <div class="panel-heading">请登录学习系统</div>

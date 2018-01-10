@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Requests\Request;
 use DB;
+use route;
 use App\News;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
@@ -20,6 +22,16 @@ class Controller extends BaseController
     public function help(){
 
         return view('help');
+    }
+    public function news_list(){
+        $news = DB::table('news')->orderBy('created_at','desc')->get();
+        return view('news.list',compact('news'));
+    }
+    public function news_detail(Request $request){
+
+        $news = DB::table('news')->where('id',$request->get('id'))->get();
+
+        return view('news.detail',compact('news'));
     }
 
 

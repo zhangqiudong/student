@@ -5,24 +5,51 @@
 ul.def_index_ul{ margin:0 0px;}
 .def_inde_img{height: 180px;}
 .def_inde_img img{  float: left;width: 100%;}
-@media (min-width: 992px){
-    .col-md-offset-2 {  margin-left: 0%;}
-    .col-md-8 {  width: 100%;  }
-}
+@media (min-width: 992px){  .col-md-offset-2 {  margin-left: 0%;}  .col-md-8 {  width: 100%;  }  }
+.location{margin-bottom: 40px}
+.location span{color: #0072E3;}
 .footer-link{margin-left: 50px;}
 .footer-link ul li{float: left ;margin-left: 20px;}
 .footer-link ul li a{ color: #fff;}
 .footer-link ul li a:hover{ color:#337ab7;}
-.def_footer{width: 100%;background:#959595 ;color: #fff;padding-top: 20px;}
-
+.def_footer{width: 100%;color: #fff;}
+.red{  color: red;}
 .line_vertial{width: 1px;background: #fff;min-height: 60px;}
+.line_row{width:100%;height:2px; background: #38f;margin: 20px 0 20px 0;}
 .main{background: url(/images/container-bg.jpg)  100% 100%;}
-.main h4{color: green;padding: 12px 12px;background: #fff;opacity: 0.8;margin: 0 0;}
+.main h4{color: green;padding: 13px 10px;margin: 0 0;}
 .index_form{padding: 10% 10%;}
 .nav-justified {  margin-bottom: 5px;}
 .list-group{margin:0px 0px;}
 .list-group a { cursor: pointer;}
-
+.index_notice,.index_articles{width:28%;float: left}
+.index_news{width:44%;float: left}
+.index_notice h4,.index_articles h4,.index_news h4{font-weight: bold; float: left;}
+.index_articles h4{color: blue;}
+.index_news h4{color: purple;}
+.index_login{margin-left: 0px;width: 499px;background: #fff;height: 431px}
+.def_inde_img img{ width:100%;float: left;}
 .login_con{min-height: 500px;background: #ccc;padding-top: 50px;  }
-.line_row{width:100%;height:2px; background: #38f;margin: 20px 0 50px 0;}
 
+.panel-footer{  border-top:0px solid #ccc;}
+.footer {  clear: both;  padding: 20px 0;  text-align: center;  border-top: 1px solid #edebec;  font-size: 12px;  color: #666;  }
+.footer .aboutus {  margin: 10px 0;  }
+.footer a {  color: #666;  }
+.footer .aboutus a {  margin: 0 10px;  }
+.articles_logo,.notices_logo,.news_logo{height: 45px;background: #fff;}
+.articles_logo div,.notices_logo div,.news_logo div{height: 45px;overflow: hidden; float: left; }
+.notices_logo div{padding-top: 6px; }
+.articles_logo div img,.notices_logo div img,.news_logo div img{width: 45px;}
+/*help页面*/
+.help_company{margin-top: 50px;}
+.help_company li{margin-bottom: 10px;}
+
+
+/*help页面*/
+
+/*新闻*/
+.news_list{padding-left: 50px;width: 80%;}
+.news_list ul li{margin-bottom: 10px;}
+.news_list ul li span{float: right;}
+.news_list ul li a {cursor: pointer;}
+/*新闻*/
