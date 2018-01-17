@@ -27,10 +27,9 @@ class Controller extends BaseController
         $news = DB::table('news')->orderBy('created_at','desc')->get();
         return view('news.list',compact('news'));
     }
-    public function news_detail(Request $request){
+    public function news_detail($id){
 
-        $news = DB::table('news')->where('id',$request->get('id'))->get();
-
+        $news = DB::table('news')->where('id',$id)->get();
         return view('news.detail',compact('news'));
     }
 

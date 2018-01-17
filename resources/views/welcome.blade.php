@@ -17,7 +17,7 @@
                     <div class="def_inde_img"><img  src="/images/logo_2.jpg" /></div>
                     <ul class="list-group def_index_ul">
                     @foreach ($news as $new)
-                        <li class="list-group-item"><a href="#">({{$new->id}}).{{$new->title}}</a> </li>
+                        <li class="list-group-item"><a href="/news/{{ $new->id }}/detail">({{$new->id}}).{{$new->title}}</a> </li>
                     @endforeach
                     </ul>
                 </div>
@@ -69,11 +69,10 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-md-6 col-md-offset-3">
+                            <div class="col-md-7 col-md-offset-3">
                                 <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" style="height: 13px;"> 记住我
-                                    </label>
+                                    <label><input type="checkbox" name="remember" style="height: 13px;"> 记住我<a style="margin-left: 40px;" href="/reset/password">忘记密码？</a></label>
+
                                 </div>
                             </div>
                         </div>

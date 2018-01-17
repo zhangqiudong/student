@@ -11,7 +11,7 @@
     <div class="news_list" style="padding-left: 50px;">
         <ul>
             @for ($i = 0; $i < count($news); $i++)
-                <li><a href="/news/detail/{{ $news[$i]->id }}">({{$i+1}}).{{$news[$i]->title}}<span>{{$news[$i]->created_at}}</span></a> </li>
+                <li><a href="/news/{{ $news[$i]->id }}/detail">({{$i+1}}).{{$news[$i]->title}}<span>{{$news[$i]->created_at}}</span></a> </li>
             @endfor
         </ul>
     </div>
