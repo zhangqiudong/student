@@ -1,4 +1,4 @@
-<div class="row-fluid">
+<div class="row-fluid" style="    margin-top: 150px;">
     <ul class="nav nav-pills nav-justified">
         <li role="presentation" class="active"><a href="#">首页</a></li>
         <li role="presentation"><a href="#">家庭教育</a></li>

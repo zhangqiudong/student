@@ -4,7 +4,7 @@
 @stop
 @section('content')
 
-    @include('nav')
+
 
     <div class="row-fluid">
         <img alt="140x140" src="/images/logo_3.jpg" width="100%"/>
@@ -13,7 +13,7 @@
         <div class="span8">
             <div class="row-fluid">
                 <div class="index_notice">
-                    <div class="notices_logo"><a href="/news/list"> <div><img src="/images/message.png" /></div> <h4>学校通知 / NOTICES</h4></div></a>
+                    <div class="notices_logo"><a href="/news/list"> <div><img src="/images/message.png" /></div> <h4>学校通知 / NOTICES</h4></a></div>
                     <div class="def_inde_img"><img  src="/images/logo_2.jpg" /></div>
                     <ul class="list-group def_index_ul">
                     @foreach ($news as $new)
@@ -33,15 +33,13 @@
                     </ul>
                 </div>
                 <div class="index_news">
-                    <div class="news_logo"> <div><img src="/images/news.png" /></div> <h4>最新要闻 / NEWS</h4></div>
+                    <div class="news_logo"> <a href="/infos/list"> <div><img src="/images/news.png" /></div><h4>教育要闻 / NEWS</h4> </a> </div>
                     <div class="def_inde_img"><img  src="/images/logo_1.jpg" /></div>
                     <div class="list-group">
                         <ul class="list-group def_index_ul">
-                            <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
-                            <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
-                            <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
-                            <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
-                            <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+                            @foreach ($infos as $info)
+                                <li class="list-group-item"><a href="/infos/{{ $info->id }}/detail">({{$info->id}})<?php  echo(str_limit($info->title, $limit = 50, $end = '...')) ?> </a> </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>

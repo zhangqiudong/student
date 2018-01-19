@@ -18,6 +18,9 @@ Route::get('/',['as'=>'home','uses'=>'Controller@home']);
 Route::get('/help',['as'=>'help','uses'=>'Controller@help']);
 Route::get('/news/list',['as'=>'news_list','uses'=>'Controller@news_list']);
 Route::get('/news/{id}/detail',['as'=>'news_detail','uses'=>'Controller@news_detail']);
+Route::get('/infos/list',['as'=>'infos_list','uses'=>'Controller@infos_list']);
+Route::get('/infos/{id}/detail',['as'=>'infos_detail','uses'=>'Controller@infos_detail']);
+
 
 Route::get('login',['middleware'=>'guest','as'=>'login','uses'=>'loginController@loginGet']);
 Route::post('login', [

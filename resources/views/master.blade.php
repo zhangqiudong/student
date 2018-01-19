@@ -12,12 +12,12 @@
     <script src="/bootstrap/js/bootstrap.js"></script>
     <script src="/js/jquery-1.7.2.min.js"></script>
     <script src="/js/maps.js"></script>
+    <script src="/js/style.js"></script>
 
 </head>
 <body onload="onLoad()">
-<div class="container-fluid" style="width: 90%; margin: 20px auto;min-height:750px; ">
-
-    @include('header')
+@include('header')
+<div class="container-fluid" style="width:92%; margin:0px auto;min-height:750px; ">
 
     @yield('content')
 

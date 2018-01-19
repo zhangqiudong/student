@@ -6,31 +6,53 @@
 
 @section('content')
 
-    <div class="container">
+    <div class="container1">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a href="/stu/home"><button class="btn btn-info">个人信息</button></a>
-                        @include('stu.grade')
-                    </div>
+            <div class="stu_leftcon" style="float: left;border: 1px solid #ccc;width:15%;min-height: 600px;">
 
-                    <div class="panel-body">
-                        <div class="personal-mes">
-                            学号: {{ Auth::user()->id }}
-                            <br />
-                            姓名: {{ Auth::user()->name }}
-                            <br />
-                            性别: {{ Auth::user()->sex }}
-                            <br />
-                            手机: {{ Auth::user()->phone }}
-                            <br />
-                            班级: {{ Auth::user()->pro_class }}
-                            <br />
-                            邮箱: {{ Auth::user()->email }}
-                            <hr />
-                            <a href="/stu/edit"><button class="btn btn-primary">修改资料</button></a>
-                        </div>
+
+                <div class="panel-heading">
+                    <div><a href="/stu/home"><button class="btn btn-info">个人信息</button></a></div>
+                    <div><a href="/stu/"><button class="btn btn-info">发表文章</button></a></div>
+                    <div><a href="/stu/"><button class="btn btn-info">作业下载</button></a></div>
+                    <div> @include('stu.grade')</div>
+                </div>
+
+            </div>
+            <div class="panel panel-default" style="float: left;width:85%">
+                <div class="stu_location" style="padding: 20px 10px">
+                    <span>我的信息</span>><span>个人资料</span>
+                </div>
+                <div style="background: url(../images/flower.gif) no-repeat;  height: 40px;"></div>
+                <div style="height:1px;border-top: 1px dashed #cccccc"></div>
+
+                <div class="panel-body">
+                    <div>
+                        <table class="table table-bordered base_info_table">
+                            <tr><td>姓名：</td><td>{{ Auth::user()->name }}</td><td>身份证号码：</td><td></td></tr>
+                            <tr><td>性别：</td><td>{{ Auth::user()->sex }}</td><td>学号：</td><td>{{ Auth::user()->id }}</td></tr>
+                            <tr><td>年级：</td><td> {{ Auth::user()->nianji }}</td><td>班级：</td><td> {{ Auth::user()->pro_class }}</td></tr>
+                            <tr><td>状态：</td><td>在读</td><td>班主任：</td><td></td></tr>
+                            <tr><td colspan="3">联系方式（如有联系方式变动请及时修改，以便能及时联系到你，谢谢！）</td></tr>
+                            <tr><td>手机：</td><td>{{ Auth::user()->phone }}</td><td>第二联系号码：</td><td>{{ Auth::user()->phone2 }}</td></tr>
+                            <tr><td>QQ：</td><td>{{ Auth::user()->qq }}</td><td>电子邮箱：</td><td> {{ Auth::user()->email }}</td></tr>
+                            <tr><td  colspan="3">联系地址：</td><td>{{ Auth::user()->address }}</td></tr>
+                        </table>
+                    </div>
+                    <div class="personal-mes">
+                        {{--学号: {{ Auth::user()->id }}--}}
+                        {{--<br />--}}
+                        {{--姓名: {{ Auth::user()->name }}--}}
+                        {{--<br />--}}
+                        {{--性别: {{ Auth::user()->sex }}--}}
+                        {{--<br />--}}
+                        {{--手机: {{ Auth::user()->phone }}--}}
+                        {{--<br />--}}
+                        {{--班级: {{ Auth::user()->pro_class }}--}}
+                        {{--<br />--}}
+                        {{--邮箱: {{ Auth::user()->email }}--}}
+                        {{--<hr />--}}
+                        <a href="/stu/edit"><button class="btn btn-primary">修改资料</button></a>
                     </div>
                 </div>
             </div>

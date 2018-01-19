@@ -7,7 +7,7 @@
 
     @include('nav')
     <div class="line_row"></div>
-    <div class="location"><span>当前位置：</span><a href="/">首页</a>-><a href="/news/list">新闻</a>->新闻内容</div>
+    <div class="location"><span>当前位置：</span><a href="/">首页</a>-><a href="/news/list">学校通知</a>->内容</div>
     <div class="news_list" style="padding-left: 50px;">
 
         @foreach ($news as $news)
