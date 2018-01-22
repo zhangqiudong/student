@@ -3,13 +3,18 @@
     个人信息修改
     @stop
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a href="/stu/home"><button class="btn btn-info">个人信息</button></a>
+        <div class="row" style="padding:0 0;margin: 0 0;">
+
+                @include('stu.left')
+
+                <div class="panel panel-default"  style="float: left;width:85%">
+
+                    <div class="stu_location" style="padding: 20px 10px">
+                        <span>我的信息</span>><span>个人资料修改</span>
                     </div>
+
+                    <div style="background: url(../images/flower.gif) no-repeat;  height: 40px;"></div>
+                    <div style="height:1px;border-top: 1px dashed #cccccc"></div>
 
                     @include('errors.list')
 
@@ -58,6 +63,5 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
 @stop

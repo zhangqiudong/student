@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Stu;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Task;
 use App\Http\Requests;
 use Redirect;
 use App\Http\Controllers\Controller;
@@ -23,17 +24,18 @@ class StudentController extends Controller
     }
 
     public function edit(){
-        return view('stu.edit');
+        $grade = Auth::user()->grade;
+        return view('stu.edit',compact('grade'));
     }
     public function update(Request $request){
-      $this->validate($request,[
-          'phone'=>'required|digits:11',
-          'pro_class'=>'required',
-          'email'=>'required|email'
-          ]);
-      Auth::user()->update($request->all());
-      session()->flash('message','个人信息修改成功');
-      return Redirect::route('stu_home');
+        $this->validate($request,[
+            'phone'=>'required|digits:11',
+            'pro_class'=>'required',
+            'email'=>'required|email'
+        ]);
+        Auth::user()->update($request->all());
+        session()->flash('message','个人信息修改成功');
+        return Redirect::route('stu_home');
     }
     public function uploadTxt(){
         return view('stu.uploadTxt');
@@ -88,10 +90,15 @@ class StudentController extends Controller
         return '创建成功';
     }
 
-    public function down()
+    public function down_homework()
     {
-        return response()->download(realpath(base_path('public/uploads')).'\test.txt',
-            'Laraveldown.txt');
+        $nianji =  Auth::user()->nianji;
+        $pro_class =  Auth::user()->pro_class;
+        $result = Task::where(['nianji'=>$nianji,'pro_class'=>$pro_class])->orderBy('created_at','desc')->first();
+        $name = $result->taskname;
+//        return response()->download(realpath(base_path('public/uploads')).'\test.txt',
+//            'Laraveldown.txt');
+        return response()->download(realpath(base_path('public/uploads')).'/'.$name,$name);
     }
 
 

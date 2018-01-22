@@ -55,6 +55,7 @@ ul.def_index_ul{ margin:0 0px;}
 .admin_right{float: left;width:85%;    min-height: 600px;}
 .admin_right .modal{left:50%}
 .add_stu_title ,.add_news_title{    background: #ccc;  padding: 10px;  margin-bottom: 20px}
+.Admin_location span,.stu_location span{font-family: "宋体"}
 /*学生页面*/
 .stu_leftcon{background: url(/images/stu_left.png) no-repeat;float: left;border: 1px solid #ccc;width:15%;min-height: 600px;background-size: 100%;}
 .stu_leftcon .panel-heading{padding: 120px 0 0 80px;}

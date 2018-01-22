@@ -29,28 +29,37 @@ Route::get('logout', [
     'middleware' => 'auth', 'as' => 'logout', 'uses' => 'loginController@logout']);
 
 //sudent operation学生操作
+//下载作业
+Route::get('stu/download/', [
+    'as' => 'downloadTask', 'uses' => 'Stu\StudentController@down_homework']);
 Route::get('stu/home', [
     'as' => 'stu_home', 'uses' => 'Stu\StudentController@home']);
 Route::get('stu/edit', [
     'as' => 'stu_edit', 'uses' => 'Stu\StudentController@edit']);
 Route::post('stu/update', [
     'as' => 'stu_update', 'uses' => 'Stu\StudentController@update']);
-Route::get('stu/uploadTxt/', [
-    'as' => 'stu_uploadTxt', 'uses' => 'Stu\StudentController@uploadTxt']);
-Route::post('stu/uploadTxt_save/', [
-    'as' => 'stu_uploadTxt_save', 'uses' => 'Stu\StudentController@uploadTxt_save']);
-Route::get('stu/downloadTask/', [
-    'as' => 'downloadTask', 'uses' => 'Stu\StudentController@down']);
+//上传文章
+//Route::get('stu/uploadTxt/', [
+//    'as' => 'stu_uploadTxt', 'uses' => 'Stu\StudentController@uploadTxt']);
+//Route::post('stu/uploadTxt_save/', [
+//    'as' => 'stu_uploadTxt_save', 'uses' => 'Stu\StudentController@uploadTxt_save']);
+
 
 
 //admin operation管理员操作
+//作业上传
+Route::get('admin/upload_task/',['uses'=>'Admin\AdminController@uploadTask']);
+Route::post('admin/upload_task_save/', [
+    'as' => 'admin_uploadTask_save', 'uses' => 'Admin\AdminController@uploadTask_save']);
+
 Route::get('admin/grade',['as'=>'grade_list','uses'=>'Admin\GradeController@index']);
 Route::post('admin/upload_grade',['uses'=>'Admin\GradeController@upload_grade']);
 Route::resource('admin','Admin\AdminController');
 
-
+//添加通知
 Route::post('admin/uploadnews',['uses'=>'Admin\NewsController@addnews']);
-Route::post('admin/uploadnews',['uses'=>'Admin\NewsController@upload_news']);
+Route::post('admin/uploadnews_save',['uses'=>'Admin\NewsController@upload_news']);
+
 
 Route::get('Admin/search',['as'=>'search','uses'=>'Admin\adminController@search']);
 

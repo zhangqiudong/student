@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('title')
-    添加新闻
+    添加通知
 @stop
 
 @section('content')
