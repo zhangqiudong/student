@@ -5,9 +5,12 @@
 @stop
 
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10">
+
+        <div class="row" style="padding:0 0;margin: 0 0;">
+            <div class="stu_leftcon">
+                @include('Admin.left')
+            </div>
+            <div class="panel panel-default admin_right">
                 <h3 align="center">学生成绩表</h3>
                 <table class="table table-striped" id="sortTable">
                     <thead>
@@ -37,8 +40,6 @@
                     @endforeach
                 </table>
             </div>
-
-            @include('Admin.right_bar')
         </div>
-    </div>
+
 @stop

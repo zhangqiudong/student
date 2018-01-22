@@ -28,15 +28,22 @@ Route::post('login', [
 Route::get('logout', [
     'middleware' => 'auth', 'as' => 'logout', 'uses' => 'loginController@logout']);
 
-
+//sudent operation学生操作
 Route::get('stu/home', [
     'as' => 'stu_home', 'uses' => 'Stu\StudentController@home']);
 Route::get('stu/edit', [
     'as' => 'stu_edit', 'uses' => 'Stu\StudentController@edit']);
 Route::post('stu/update', [
     'as' => 'stu_update', 'uses' => 'Stu\StudentController@update']);
+Route::get('stu/uploadTxt/', [
+    'as' => 'stu_uploadTxt', 'uses' => 'Stu\StudentController@uploadTxt']);
+Route::post('stu/uploadTxt_save/', [
+    'as' => 'stu_uploadTxt_save', 'uses' => 'Stu\StudentController@uploadTxt_save']);
+Route::get('stu/downloadTask/', [
+    'as' => 'downloadTask', 'uses' => 'Stu\StudentController@down']);
 
 
+//admin operation管理员操作
 Route::get('admin/grade',['as'=>'grade_list','uses'=>'Admin\GradeController@index']);
 Route::post('admin/upload_grade',['uses'=>'Admin\GradeController@upload_grade']);
 Route::resource('admin','Admin\AdminController');

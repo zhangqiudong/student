@@ -16,12 +16,11 @@
 
 </head>
 <body onload="onLoad()">
+
 @include('header')
+
 <div class="container-fluid" style="width:92%; margin:0px auto;min-height:750px; ">
-
     @yield('content')
-
-
 </div>
 @include('footer')
 <!-- script -->

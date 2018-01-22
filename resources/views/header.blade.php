@@ -1,4 +1,4 @@
-<div class="row-fluid" style="background: url(images/banner3.png) no-repeat;    height: 200px;    display: flex;    align-items: center;    background-size: 100% 100%;    width: 90%;
+<div class="row-fluid" style="background: url(/images/banner3.png) no-repeat;    height: 200px;    display: flex;    align-items: center;    background-size: 100% 100%;    width: 90%;
     margin: 0 auto;">
     <div style="width: 96%; margin: 0 auto;">
         <div class="span8">

@@ -5,10 +5,14 @@
 @stop
 
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10">
-                <h2>添加学生</h2>
+
+        <div class="row" style="padding:0 0;margin: 0 0;">
+            <div class="stu_leftcon">
+                @include('Admin.left')
+            </div>
+            <div class="panel panel-default admin_right">
+
+                <h2 class="add_stu_title">添加学生</h2>
                 <hr />
 
                 @include('errors.list')
@@ -35,7 +39,6 @@
                     {!! Form::close() !!}
                 </div>
             </div>
-            @include('Admin.right_bar')
+
         </div>
-    </div>
 @stop
