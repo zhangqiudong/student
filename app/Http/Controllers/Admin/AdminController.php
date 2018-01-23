@@ -46,6 +46,8 @@ class AdminController extends Controller
         $user =new User;
         $user->id=$request->id;
         $user->name=$request->name;
+        $user->nianji=$request->nianji;
+        $user->pro_class=$request->pro_class;
         $user->password=Hash::make($user->id);
         $user->save();
         session()->flash('message',$user->name.'同学添加成功！');

@@ -59,6 +59,8 @@ ul.def_index_ul{ margin:0 0px;}
 /*学生页面*/
 .stu_leftcon{background: url(/images/stu_left.png) no-repeat;float: left;border: 1px solid #ccc;width:15%;min-height: 600px;background-size: 100%;}
 .stu_leftcon .panel-heading{padding: 120px 0 0 80px;}
+.edit_title span:nth-child(2){margin-left: 10%; }
+.edit_title{    padding-bottom: 20px;}
 /*news*/
 
 .news_list{padding-left: 50px;width: 80%;}

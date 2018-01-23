@@ -17,11 +17,11 @@
                 </form>
                 <h3 align="center">学生信息表</h3>
                 <table class="table table-hover">
-                <tr><td>学号</td><td>姓名</td><td>性别</td><td>手机</td><td>班级</td><td>邮箱</td><td>操作</td></tr>
+                <tr><td>学号</td><td>姓名</td><td>性别</td><td>手机</td><td>年级、班级</td><td>邮箱</td><td>操作</td></tr>
                 @if (count($users))
                 @foreach ($users as $user)
                 <tr>
-                <td>{{ $user->id }}</td><td>{{ $user->name }}</td><td>{{ $user->sex }}</td><td>{{ $user->phone }}</td><td>{{ $user->pro_class }}</td><td>{{ $user->email }}</td><td>
+                <td>{{ $user->id }}</td><td>{{ $user->name }}</td><td>{{ $user->sex }}</td><td>{{ $user->phone }}</td><td>{{ $user->nianji }} {{ $user->pro_class }}</td><td>{{ $user->email }}</td><td>
                 <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#myModal{{$user->id}}">更新分数</button>
                 <form action="{{ url('admin/'.$user->id) }}" style='display: inline' method="post">
                 <input type="hidden" name="_method" value="DELETE">

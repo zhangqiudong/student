@@ -5,7 +5,7 @@
     @stop
 @section('content')
 
-    @include('nav')
+
     <div class="line_row"></div>
     <script src=" http://api.tianditu.com/js/maps.js" type="text/javascript"></script>
     <script>
@@ -19,10 +19,6 @@
             map.centerAndZoom(new TLngLat(116.40969,39.89945),zoom);
         }
     </script>
-
-
-
-    <div class="container-fluid">
         <div class="row-fluid">
             <div class="span6">
                 <h3>
@@ -51,6 +47,5 @@
             </div>
 
         </div>
-    </div>
 
     @stop

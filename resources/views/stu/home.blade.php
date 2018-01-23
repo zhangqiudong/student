@@ -26,7 +26,7 @@
                             <tr><td colspan="3">联系方式（如有联系方式变动请及时修改，以便能及时联系到你，谢谢！）</td></tr>
                             <tr><td>手机：</td><td>{{ Auth::user()->phone }}</td><td>第二联系号码：</td><td>{{ Auth::user()->phone2 }}</td></tr>
                             <tr><td>QQ：</td><td>{{ Auth::user()->qq }}</td><td>电子邮箱：</td><td> {{ Auth::user()->email }}</td></tr>
-                            <tr><td  colspan="3">联系地址：</td><td>{{ Auth::user()->address }}</td></tr>
+                            <tr><td>联系地址：</td><td  colspan="3">{{ Auth::user()->address }}</td></tr>
                         </table>
                     </div>
                     <div class="personal-mes">

@@ -32,6 +32,18 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        {!! Form::label('name', '年级: ', ['class' => 'control-label col-md-1']) !!}
+                        <div class="col-md-4">
+                            {!! Form::text('nianji', old('nianji'), ['class' => 'form-control', 'required']) !!}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        {!! Form::label('name', '班级: ', ['class' => 'control-label col-md-1']) !!}
+                        <div class="col-md-4">
+                            {!! Form::text('pro_class', old('pro_class'), ['class' => 'form-control', 'required']) !!}
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="col-md-5">
                             {!! Form::submit('完成,创建', ['class' => 'btn btn-success form-control']) !!}
                         </div>
