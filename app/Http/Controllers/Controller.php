@@ -43,6 +43,27 @@ class Controller extends BaseController
         $infos = DB::table('infos')->where('id',$id)->get();
         return view('infos.detail',compact('infos'));
     }
+    //作文
+    public function zuowen(){
+
+        $compositions = DB::table('compositions')->orderBy('date','desc')->get();
+        return view('zuowen',compact('compositions'));
+    }
+    public function zuowen_detail($id){
+        $zuowen = DB::table('compositions')->where('id',$id)->get();
+        return view('zuowen_detail',compact('zuowen'));
+
+    }
+   //父母课堂
+    public function par_know(){
+        $items = DB::table('kwdgforparents')->orderBy('date','desc')->get();
+        return view('par_know',compact('items'));
+    }
+    public function par_know_detail($id){
+        $items = DB::table('kwdgforparents')->where('id',$id)->get();
+        return view('par_info',compact('items'));
+
+    }
 
 
 }

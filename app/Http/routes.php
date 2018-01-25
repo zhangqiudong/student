@@ -63,3 +63,9 @@ Route::post('admin/uploadnews_save',['uses'=>'Admin\NewsController@upload_news']
 
 Route::get('Admin/search',['as'=>'search','uses'=>'Admin\adminController@search']);
 
+// 作文composition
+Route::get('/composition/',['as'=>'composition','uses'=>'Controller@zuowen']);
+Route::get('/youxiuzuowen/{id}/',['as'=>'zuowen_detail','uses'=>'Controller@zuowen_detail']);
+//父母课堂
+Route::get('/par_know/',['as'=>'par_know','uses'=>'Controller@par_know']);
+Route::get('/par_know/{id}/detail',['as'=>'par_know_detail','uses'=>'Controller@par_know_detail']);

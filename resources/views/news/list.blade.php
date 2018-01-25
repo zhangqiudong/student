@@ -5,7 +5,6 @@
 
 @section('content')
 
-    @include('nav')
     <div class="line_row"></div>
     <div class="location"><span>当前位置：</span><a href="/">首页</a>->学校通知 </div>
     <div class="news_list" style="padding-left: 50px;">
