@@ -43,9 +43,6 @@ Route::post('stu/update', [
 //    'as' => 'stu_uploadTxt', 'uses' => 'Stu\StudentController@uploadTxt']);
 //Route::post('stu/uploadTxt_save/', [
 //    'as' => 'stu_uploadTxt_save', 'uses' => 'Stu\StudentController@uploadTxt_save']);
-
-
-
 //admin operation管理员操作
 //作业上传
 Route::get('admin/upload_task/',['uses'=>'Admin\AdminController@uploadTask']);
@@ -69,3 +66,19 @@ Route::get('/youxiuzuowen/{id}/',['as'=>'zuowen_detail','uses'=>'Controller@zuow
 //父母课堂
 Route::get('/par_know/',['as'=>'par_know','uses'=>'Controller@par_know']);
 Route::get('/par_know/{id}/detail',['as'=>'par_know_detail','uses'=>'Controller@par_know_detail']);
+
+//百科
+Route::get('/baike/Common_sense/',['as'=>'Common_sense','uses'=>'Controller@Common_sense']);
+Route::get('/baike/Common_sense/{id}/detail',['as'=>'Common_sense','uses'=>'Controller@Common_sense_detail']);
+
+
+Route::get('/baike/Interesting_discovery/',['as'=>'Interesting_discovery','uses'=>'Controller@Interesting_discovery']);
+Route::get('/baike/discovery/{id}/detail',['as'=>'Interesting_discovery','uses'=>'Controller@Interesting_detail']);
+
+Route::get('/baike/modern_science/',['as'=>'modern_science','uses'=>'Controller@modern_science']);
+Route::get('/baike/modern_science/{id}/detail',['as'=>'modern_science','uses'=>'Controller@modern_science_detail']);
+
+Route::get('/baike/geography/',['as'=>'geography','uses'=>'Controller@geography']);
+Route::get('/baike/geography/{id}/detail',['as'=>'geography_detail','uses'=>'Controller@geography_detail']);
+
+

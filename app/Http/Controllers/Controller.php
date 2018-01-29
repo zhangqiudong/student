@@ -65,5 +65,42 @@ class Controller extends BaseController
 
     }
 
+    //百科
+    public function Common_sense(){
+        $items = DB::table('baikes')->where("category",'身边的常识')->orderBy('date','desc')->get();
+        return view('baike.shenbian',compact('items'));
+    }
+    public function Common_sense_detail($id){
+        $items = DB::table('baikes')->where("category",'身边的常识')->where('id',$id)->first();
+        return view('baike.detail',compact('items'));
+
+    }
+    public function Interesting_discovery(){
+        $items = DB::table('baikes')->where("category",'趣味科学知识')->orderBy('date','desc')->get();
+        return view('baike.kexue',compact('items'));
+    }
+    public function Interesting_detail($id){
+        $items = DB::table('baikes')->where("category",'趣味科学知识')->where('id',$id)->first();
+        return view('baike.detail',compact('items'));
+
+    }
+    public function modern_science(){
+        $items = DB::table('baikes')->where("category",'现代科学技术')->orderBy('date','desc')->get();
+        return view('baike.xiandai',compact('items'));
+    }
+    public function modern_science_detail($id){
+        $items = DB::table('baikes')->where("category",'现代科学技术')->where('id',$id)->first();
+        return view('baike.detail',compact('items'));
+
+    }
+    public function geography(){
+        $items = DB::table('baikes')->where("category",'地理知识')->orderBy('date','desc')->get();
+        return view('baike.dili',compact('items'));
+    }
+    public function geography_detail($id){
+        $items = DB::table('baikes')->where("category",'地理知识')->where('id',$id)->first();
+        return view('baike.detail',compact('items'));
+
+    }
 
 }
