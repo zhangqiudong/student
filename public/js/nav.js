@@ -9,9 +9,17 @@
 var maxHeight = 400;
 
 $(function(){
+    $(".stu_health").hover(function () {
+        $(".dropdown").css("margin-top","495px")
+    },function () {
+        $(".dropdown").css("margin-top","150px")
+    })
+
+
 
     $(".dropdown > li").hover(function() {
         $(this).addClass('drop');
+
         var $container = $(this),
             $list = $container.find("ul"),
             $anchor = $container.find("a"),
@@ -36,19 +44,33 @@ $(function(){
             var offset = $(this).offset();
 
             $('.sliding-bar').offset(offset);
+            $('.sliding-bar').css({height:'61px'});
         });
+
         $('.sliding-bar').css({opacity:1});
+
         initMenu();
+
         if (multiplier > 1) {
+
+            $('.sliding-bar').css({opacity:0});
             $container
                 .css({
                     height: maxHeight,
-                    overflow: "hidden"
+                    overflow: "hidden",
+
                 })
                 .mousemove(function(e) {
                     var offset = $container.offset();
+                    // alert(offset.top);145
+
                     var relativeY = ((e.pageY - offset.top) * multiplier) - ($container.data("origHeight") * multiplier);
+                    //
+                    // alert(relativeY);-3
+                    // alert($container.data("origHeight"));56
+                    //
                     if (relativeY > $container.data("origHeight")) {
+                        // $list.css("top", -relativeY -20+ $container.data("origHeight"));
                         $list.css("top", -relativeY + $container.data("origHeight"));
                     };
                 });
@@ -78,6 +100,7 @@ $(function(){
 var initMenu = function () {
 
     var $initElem =  $(".dropdown > li").find("li:first-of-type");
+    // alert( $initElem.html());
     // var $initElem = $('li:first-of-type');
     var initOffset = $initElem.offset();
     var initSize = {

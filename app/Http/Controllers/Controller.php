@@ -102,5 +102,10 @@ class Controller extends BaseController
         return view('baike.detail',compact('items'));
 
     }
+    //家教辅导
+    public function stu_help(){
+        return view('stu_help');
+    }
+
 
 }

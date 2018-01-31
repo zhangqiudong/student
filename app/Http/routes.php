@@ -80,5 +80,8 @@ Route::get('/baike/modern_science/{id}/detail',['as'=>'modern_science','uses'=>'
 
 Route::get('/baike/geography/',['as'=>'geography','uses'=>'Controller@geography']);
 Route::get('/baike/geography/{id}/detail',['as'=>'geography_detail','uses'=>'Controller@geography_detail']);
+//家教辅导
+Route::get('/stu_help/',['as'=>'stu_help','uses'=>'Controller@stu_help']);
+
 
 

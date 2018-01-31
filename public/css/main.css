@@ -150,15 +150,13 @@ ul.dropdown{
 ul.dropdown li{
     font-weight: bold;
     float: left;
-    width: 180px;
+    width: 170px;
     position: relative;
+    border-radius:4px
     /*background: #ecf0f1;*/
 }
 
-ul.dropdown a:hover{
-    color: #000;
-    border-color: #ecf0f1;
-}
+ul.dropdown a:hover{    color: #000;    border-color: #ecf0f1;}
 
 ul.dropdown li a {
 

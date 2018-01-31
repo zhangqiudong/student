@@ -20,11 +20,36 @@
                 <li><a href="#">剪纸大全</a></li>
                 <li><a href="#">废物利用</a></li>
             </ul>
-            <div class="sliding-bar"></div>
         </li>
-        <li role="presentation"><a href="#">家教辅导</a></li>
-        <li role="presentation"><a href="#">宝贝心里话</a></li>
-        {{--<li role="presentation"><a href="#">精挑细选</a></li>--}}
+        <style  rel="stylesheet">
+            ul.sub_menu li:hover{background: #aef}
+        </style>
+        <li role="presentation"><a href="/stu_help/">家教辅导</a></li>
+        <li class="triangle stu_health"><a href="#">儿童健康</a>
+            <ul class="sub_menu">
+                <li><a href="/health/breath/">呼吸系统</a></li>
+                <li><a href="/health/digest/">消化系统</a></li>
+                <li><a href="/health/micturition/">泌尿系统</a></li>
+                <li><a href="/health/nerve/">神经系统</a></li>
+                <li><a href="/health/shin/">皮肤护理</a></li>
+                <li><a href="/health/transmit_illness/">传染疾病</a></li>
+                <li><a href="/health/fever/">小儿发热</a></li>
+                <li><a href="/health/diseases_of_eye/">眼科疾病</a></li>
+                <li><a href="/health/Dental_disease/">齿科疾病</a></li>
+                <li><a href="/health/E_N_T/">耳鼻喉科</a></li>
+                <li><a href="/health/Cardiovascular_disease/">心血管病</a></li>
+                <li><a href="/health/Psychology/">心理健康</a></li>
+                <li><a href="/health/Child_Medication">儿科用药</a></li>
+                <li><a href="/health/baby_disease">新生儿疾病</a></li>
+                <li><a href="/health/endocrine/">内分泌系统</a></li>
+                <li><a href="/health/family_care/">家庭护理</a></li>
+                <li><a href="/health/Pediatric_surgery/">小儿外科</a></li>
+                <li><a href="/health/else/">其他症状</a></li>
+                <li><a href="/health/baby_safe">宝贝安全</a></li>
+            </ul>
+            {{--<div class="sliding-bar"></div>--}}
+        </li>
+        <li role="presentation"><a href="#">精挑细选</a></li>
     </ul>
 </div>
 
