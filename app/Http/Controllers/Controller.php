@@ -106,6 +106,35 @@ class Controller extends BaseController
     public function stu_help(){
         return view('stu_help');
     }
+    //儿童疾病
+    public function health_list($category){
+        if ($category == "breath"){ $category ="呼吸系统";}
+        else if ($category == "digest"){ $category ="消化系统";}
+        else if ($category == "micturition"){ $category ="泌尿系统";}
+        else if ($category == "nerve"){ $category ="神经系统";}
+        else if ($category == "shin"){ $category ="皮肤护理";}
+        else if ($category == "transmit_illness"){ $category ="传染疾病";}
+        else if ($category == "diseases_of_eye"){ $category ="小儿发热";}
+        else if ($category == "Dental_disease"){ $category ="齿科疾病";}
+        else if ($category == "E_N_T"){ $category ="耳鼻喉科";}
+        else if ($category == "Cardiovascular_disease"){ $category ="心血管病";}
+        else if ($category == "Psychology"){ $category ="心理健康";}
+        else if ($category == "Child_Medication"){ $category ="儿科用药";}
+        else if ($category == "Newbaby_disease"){ $category ="新生儿疾病";}
+        else if ($category == "endocrine"){ $category ="内分泌系统";}
+        else if ($category == "family_care"){ $category ="家庭护理";}
+        else if ($category == "Pediatric_surgery"){ $category ="小儿外科";}
+        else if ($category == "baby_safe"){ $category ="宝贝安全";}
+        else { $category ="其他症状";}
+        $items = DB::table('diseases')->where("category",$category)->orderBy('date','desc')->get();
+        return view('disease',compact('items'));
 
+    }
+    //详情
+    public function health_detail($category,$id){
+        $items = DB::table('diseases')->where("category",$category)->where('id',$id)->first();
+        return view('diseases_instruction',compact('items'));
+
+    }
 
 }

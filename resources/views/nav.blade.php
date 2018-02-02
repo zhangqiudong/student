@@ -40,7 +40,7 @@
                 <li><a href="/health/Cardiovascular_disease/">心血管病</a></li>
                 <li><a href="/health/Psychology/">心理健康</a></li>
                 <li><a href="/health/Child_Medication">儿科用药</a></li>
-                <li><a href="/health/baby_disease">新生儿疾病</a></li>
+                <li><a href="/health/Newbaby_disease">新生儿疾病</a></li>
                 <li><a href="/health/endocrine/">内分泌系统</a></li>
                 <li><a href="/health/family_care/">家庭护理</a></li>
                 <li><a href="/health/Pediatric_surgery/">小儿外科</a></li>

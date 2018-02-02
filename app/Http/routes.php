@@ -68,20 +68,43 @@ Route::get('/par_know/',['as'=>'par_know','uses'=>'Controller@par_know']);
 Route::get('/par_know/{id}/detail',['as'=>'par_know_detail','uses'=>'Controller@par_know_detail']);
 
 //百科
-Route::get('/baike/Common_sense/',['as'=>'Common_sense','uses'=>'Controller@Common_sense']);
-Route::get('/baike/Common_sense/{id}/detail',['as'=>'Common_sense','uses'=>'Controller@Common_sense_detail']);
-
-
-Route::get('/baike/Interesting_discovery/',['as'=>'Interesting_discovery','uses'=>'Controller@Interesting_discovery']);
-Route::get('/baike/discovery/{id}/detail',['as'=>'Interesting_discovery','uses'=>'Controller@Interesting_detail']);
-
-Route::get('/baike/modern_science/',['as'=>'modern_science','uses'=>'Controller@modern_science']);
-Route::get('/baike/modern_science/{id}/detail',['as'=>'modern_science','uses'=>'Controller@modern_science_detail']);
-
-Route::get('/baike/geography/',['as'=>'geography','uses'=>'Controller@geography']);
-Route::get('/baike/geography/{id}/detail',['as'=>'geography_detail','uses'=>'Controller@geography_detail']);
+Route::group(['prefix' => 'baike'], function () {
+    Route::get('Common_sense/',['as'=>'Common_sense','uses'=>'Controller@Common_sense']);
+    Route::get('Common_sense/{id}/detail',['as'=>'Common_sense','uses'=>'Controller@Common_sense_detail']);
+    Route::get('Interesting_discovery/',['as'=>'Interesting_discovery','uses'=>'Controller@Interesting_discovery']);
+    Route::get('discovery/{id}/detail',['as'=>'Interesting_discovery','uses'=>'Controller@Interesting_detail']);
+    Route::get('modern_science/',['as'=>'modern_science','uses'=>'Controller@modern_science']);
+    Route::get('modern_science/{id}/detail',['as'=>'modern_science','uses'=>'Controller@modern_science_detail']);
+    Route::get('geography/',['as'=>'geography','uses'=>'Controller@geography']);
+    Route::get('geography/{id}/detail',['as'=>'geography_detail','uses'=>'Controller@geography_detail']);
+});
 //家教辅导
 Route::get('/stu_help/',['as'=>'stu_help','uses'=>'Controller@stu_help']);
+//儿童疾病
+Route::group(['prefix' => 'health'], function () {
+    Route::get('{category}/',['as'=>'breath','uses'=>'Controller@health_list']);
+//    Route::get('digest/',['as'=>'digest','uses'=>'Controller@digest']);
+//    Route::get('micturition/',['as'=>'micturition','uses'=>'Controller@micturition']);
+//    Route::get('nerve/',['as'=>'nerve','uses'=>'Controller@nerve']);
+//    Route::get('shin/',['as'=>'shin','uses'=>'Controller@shin']);
+//    Route::get('transmit_illness/',['as'=>'transmit_illness','uses'=>'Controller@transmit_illness']);
+//    Route::get('fever/',['as'=>'fever','uses'=>'Controller@fever']);
+//    Route::get('diseases_of_eye/',['as'=>'diseases_of_eye','uses'=>'Controller@diseases_of_eye']);
+//    Route::get('Dental_disease/',['as'=>'Dental_disease','uses'=>'Controller@Dental_disease']);
+//    Route::get('E_N_T/',['as'=>'E_N_T','uses'=>'Controller@E_N_T']);
+//    Route::get('Cardiovascular_disease/',['as'=>'Cardiovascular_disease','uses'=>'Controller@Cardiovascular_disease']);
+//    Route::get('Psychology/',['as'=>'Psychology','uses'=>'Controller@Psychology']);
+//    Route::get('Child_Medication/',['as'=>'Child_Medication','uses'=>'Controller@Child_Medication']);
+//    Route::get('Newbaby_disease/',['as'=>'Newbaby_disease','uses'=>'Controller@Newbaby_disease']);
+//    Route::get('endocrine/',['as'=>'endocrine','uses'=>'Controller@endocrine']);
+//    Route::get('family_care/',['as'=>'family_care','uses'=>'Controller@family_care']);
+//    Route::get('Pediatric_surgery/',['as'=>'Pediatric_surgery','uses'=>'Controller@Pediatric_surgery']);
+//    Route::get('else/',['as'=>'else','uses'=>'Controller@else']);
+//    Route::get('baby_safe/',['as'=>'baby_safe','uses'=>'Controller@baby_safe']);
+//详细介绍/health/消化系统/141/instruction
+    Route::get('/{category}/{id}/instruction',['as'=>'health_detail','uses'=>'Controller@health_detail']);
+});
+
 
 
 

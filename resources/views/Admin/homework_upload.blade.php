@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <br />
-                {{--name为iamge--}}
+
                 {!! Form::file('txt') !!}
 
                 {!! Form::submit('提交') !!}<br>
