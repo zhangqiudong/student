@@ -16,6 +16,15 @@
 //});
 Route::get('/',['as'=>'home','uses'=>'Controller@home']);
 Route::get('/help',['as'=>'help','uses'=>'Controller@help']);
+
+//footer
+Route::get('/aboutus',['as'=>'aboutus','uses'=>'Controller@aboutus']);
+Route::get('/ad_service',['as'=>'ad_service','uses'=>'Controller@ad_service']);
+Route::get('/cooperation',['as'=>'cooperation','uses'=>'Controller@cooperation']);
+Route::get('/share',['as'=>'share','uses'=>'Controller@share']);
+Route::get('/mianze',['as'=>'mianze','uses'=>'Controller@mianze']);
+Route::get('/contact',['as'=>'contact','uses'=>'Controller@contact']);
+
 Route::get('/news/list',['as'=>'news_list','uses'=>'Controller@news_list']);
 Route::get('/news/{id}/detail',['as'=>'news_detail','uses'=>'Controller@news_detail']);
 Route::get('/infos/list',['as'=>'infos_list','uses'=>'Controller@infos_list']);
@@ -105,6 +114,9 @@ Route::group(['prefix' => 'health'], function () {
     Route::get('/{category}/{id}/instruction',['as'=>'health_detail','uses'=>'Controller@health_detail']);
 });
 
-
+//才艺展示
+Route::group(['prefix' => 'caiyi'], function () {
+    Route::get('jianzhi/',['as'=>'jianhzi','uses'=>'Controller@caiyi_show']);
+});
 
 

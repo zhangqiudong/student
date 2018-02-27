@@ -191,7 +191,6 @@ ul.dropdown ul li {
     font-weight: normal;
     /*background: #f6f6f6; */
     color: #000;
-    border-bottom: 1px solid #ccc;
 }
 
 ul.dropdown ul li a{
@@ -199,12 +198,6 @@ ul.dropdown ul li a{
     color: #34495e !important;
 
 }
-
-/*ul.dropdown ul li a:hover{*/
-/*display: block; */
-/*background: #3498db !important;*/
-/*color: #fff !important;*/
-/*} */
 li.drop{background: #ecf0f1}
 .drop > a{
     position: relative;
@@ -304,4 +297,135 @@ li.drop{background: #ecf0f1}
     text-decoration: none;
     font-weight: 600;
     color: #ff9;
+}
+.t_main_box {
+    height: auto;
+    margin: 0 auto;
+    padding: 0px 1px;
+    position: relative;
+}
+.t_g {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #D7EFb6;
+    background-color: #F5FDF0;
+    position: relative;
+}
+.t_g_t {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    background-image: url(images/tcolor.png);
+    background-repeat: repeat-x;
+    background-position: 0px -120px;
+}
+.t_ul_d {
+    margin: 0;
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    list-style-image: none;
+    list-style-type: none;
+}
+.t_ul_d li.current a, .t_ul_d li.current {
+    font-size: 20px;
+    font-weight: bold;
+    color: #060;
+}
+
+.t_ul_d li {
+    float: left;
+    width: auto;
+    text-align: center;
+    height: 40px;
+    display: inline-block;
+    padding-left: 20px;
+    line-height: 40px;
+    font-size: 16px;
+    position: relative;
+    margin-top: 0px;
+}
+.t_ul_d li.current a, .t_ul_d li.current {
+    font-size: 20px;
+    font-weight: bold;
+    color: #060;
+}
+
+.t_ul_d li a {
+    font-size: 16px;
+}
+.t_auto {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    clear: both;
+}
+
+.t_dh_tab {
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+}
+.pb16 {
+    padding-bottom: 16px;
+}
+.t_dh_tab li {
+    display: inline;
+    width: 9%;
+    height: 30px;
+    float: left;
+    margin-left: 1.9%;
+    overflow: hidden;
+}
+.t_dh_tab li a {
+    text-align: left;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 30px;
+    line-height: 30px;
+}
+.h6 {
+    clear: both;
+    height: 6px;
+    width: 100%;
+    line-height: 6px;
+    font: 0px Arial;
+    overflow: hidden;
+}
+.t_ximg {
+    height: 120px;
+    width: 150px;
+    float: left;
+    display: inline-block;
+    margin-right: -150px;
+    position: relative;
+}
+
+.w50 {
+    width: 49.6%;
+    overflow: hidden;
+}
+
+.fl {
+    float: left;
+}
+.t_xtxt .xt_url {
+    display: inline-block;
+    font-size: 12px;
+    overflow: hidden;
+    line-height: 24px;
+    height: 24px;
+    margin-left: 150px;
+    font-weight: bold;
+    color: #333;
+}
+.t_xtxt span {
+    font-size: 12px;
+    overflow: hidden;
+    display: block;
+    height: 66px;
+    margin-left: 150px;
+    padding-right: 15px;
+    line-height: 21px;
 }

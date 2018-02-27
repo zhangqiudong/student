@@ -17,7 +17,7 @@
             <div style="background: url(../images/flower.gif) no-repeat;  height: 40px;"></div>
             <div style="height:1px;border-top: 1px dashed #cccccc"></div>
             <div class="panel-body">
-                {{--如果要上传文件，必须要在Form里面设置files为true--}}
+                {{--如果要上传文件，必须要在Form里面设置files为true--}}·
                 {!! Form::open(array('url'=>'admin/upload_task_save/','files'=>true)) !!}
 
                 <div class="form-group">

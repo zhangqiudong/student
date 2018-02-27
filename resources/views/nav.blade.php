@@ -15,10 +15,10 @@
         <li role="presentation"><a href="/composition/">优秀作文</a></li>
         <li class="triangle"><a href="#">多才多艺</a>
             <ul class="sub_menu">
-                <li><a href="#">创意手工</a></li>
-                <li><a href="#">手抄报</a></li>
-                <li><a href="#">剪纸大全</a></li>
-                <li><a href="#">废物利用</a></li>
+                <li><a href="/caiyi/shougong">创意手工</a></li>
+                <li><a href="/caiyi/shoubao">手抄报</a></li>
+                <li><a href="/caiyi/jianzhi">剪纸大全</a></li>
+                <li><a href="/caiyi/huanbao">废物利用</a></li>
             </ul>
         </li>
         <style  rel="stylesheet">

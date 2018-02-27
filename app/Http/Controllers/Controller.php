@@ -21,14 +21,32 @@ class Controller extends BaseController
         $infos = DB::table('infos')->get();
         return view('welcome',compact('news','infos'));
     }
+    public function aboutus(){
+        return view('service.aboutus');
+    }
+    public function ad_service(){
+    return view('service.ad_service');
+    }
+    public function cooperation(){
+        return view('service.cooperation');
+    }
+    public function share(){
+        return view('service.share');
+    }
+    public function mianze(){
+        return view('service.mianze');
+    }
+    public function contact(){
+        return view('service.contactus');
+    }
     public function help(){
 
         return view('help');
     }
     public function news_list(){
-    $news = DB::table('news')->orderBy('created_at','desc')->get();
-    return view('news.list',compact('news'));
-}
+        $news = DB::table('news')->orderBy('created_at','desc')->get();
+        return view('news.list',compact('news'));
+    }
     public function news_detail($id){
 
         $news = DB::table('news')->where('id',$id)->get();
@@ -54,7 +72,7 @@ class Controller extends BaseController
         return view('zuowen_detail',compact('zuowen'));
 
     }
-   //父母课堂
+    //父母课堂
     public function par_know(){
         $items = DB::table('kwdgforparents')->orderBy('date','desc')->get();
         return view('par_know',compact('items'));
@@ -134,6 +152,12 @@ class Controller extends BaseController
     public function health_detail($category,$id){
         $items = DB::table('diseases')->where("category",$category)->where('id',$id)->first();
         return view('diseases_instruction',compact('items'));
+
+    }
+
+//才艺展示
+    public function caiyi_show(){
+        return view('caiyi');
 
     }
 
