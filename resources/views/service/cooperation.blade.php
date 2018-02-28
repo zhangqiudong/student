@@ -97,8 +97,8 @@
 
                             <p class="a_sj">  邮箱：<a href="mailto:czgw@jf.com">czgw@jf.com</a></p>
                             <p class="a_sj">  联系人：张先生</p>
-                            <p class="a_sj"> <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1669191156&amp;site=qq&amp;menu=yes" target="_blank">
-                                    <img border="0" title="立即联系广告服务" alt="立即联系广告服务" src="http://wpa.qq.com/pa?p=2:1669191156:51">
+                            <p class="a_sj"> <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=544633067&amp;site=qq&amp;menu=yes" target="_blank">
+                                    <img border="0" title="立即联系广告服务" alt="立即联系广告服务" src="http://wpa.qq.com/pa?p=2:544633067:51">
                                 </a> </p>
                             <!--p></p><p></p>
                             <span class="a_ppt"><a href="喜啦啦宝贝网刊例价.xls">喜啦啦宝贝新刊例价下载</a></span-->
@@ -170,8 +170,8 @@
                             <p class="a_sj">  商务推广合作：交换资源，共同实现各自网站稳定增长；</p>
                             <p></p>
                             <p class="a_sj">  电话：18701254003 </p>
-                            <p class="a_sj">  市场部QQ：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1669191156&amp;site=qq&amp;menu=yes" target="_blank">
-                                    <img border="0" title="立即联系市场部" alt="立即联系市场部" src="http://wpa.qq.com/pa?p=2:1669191156:51">
+                            <p class="a_sj">  市场部QQ：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=544633067&amp;site=qq&amp;menu=yes" target="_blank">
+                                    <img border="0" title="立即联系市场部" alt="立即联系市场部" src="http://wpa.qq.com/pa?p=2:544633067:51">
                                 </a></p>
 
                         </div>
@@ -202,8 +202,8 @@
                                 <a href="http://www.qbaobei.com"><img src="http://www.qbaobei.com/Public/Home/qbaobei2/images/logo1.png"></a>
                             </div>
                             <h2>市场部<span class="a_nr_hui">（活动合作、媒体合作、内容合作、品牌合作、项目合作、广告服务等）</span></h2>
-                            <p class="a_sj">  市场部QQ：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1669191156&amp;site=qq&amp;menu=yes" target="_blank">
-                                    <img border="0" title="立即联系市场部" alt="立即联系市场部" src="http://wpa.qq.com/pa?p=2:1669191156:51">
+                            <p class="a_sj">  市场部QQ：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=544633067&amp;site=qq&amp;menu=yes" target="_blank">
+                                    <img border="0" title="立即联系市场部" alt="立即联系市场部" src="http://wpa.qq.com/pa?p=2:544633067:51">
                                 </a></p>
 
                             <h2>广告服务</h2>
@@ -211,8 +211,8 @@
                             <p class="a_sj">  邮箱：<a href="mailto:czgw@jf.com">czgw@jf.com</a></p>
                             <p class="a_sj">  电话：187 0125 4003 </p>
                             <p class="a_sj">  联系人：张先生</p>
-                            <p class="a_sj"> <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1669191156&amp;site=qq&amp;menu=yes" target="_blank">
-                                    <img border="0" title="立即联系广告服务" alt="立即联系广告服务" src="http://wpa.qq.com/pa?p=2:1669191156:51">
+                            <p class="a_sj"> <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=544633067&amp;site=qq&amp;menu=yes" target="_blank">
+                                    <img border="0" title="立即联系广告服务" alt="立即联系广告服务" src="http://wpa.qq.com/pa?p=2:544633067:51">
                                 </a> </p>
                         </div>
                     </div>

@@ -156,9 +156,21 @@ class Controller extends BaseController
     }
 
 //才艺展示
-    public function caiyi_show(){
-        return view('caiyi');
+    public function caiyi_show($category){
+        if ($category == "jianzhi"){ $category ="折纸大全";}
+        else if ($category == "shouchaobao"){ $category ="手抄报";}
+        else if ($category == "shougong"){ $category ="创意手工";}
+        else if ($category == "liyong"){ $category ="废物利用";}
 
+        else { $category ="其他";}
+        $items = DB::table('caiyis')->where("category",$category)->orderBy('created_at','desc')->get();
+        return view('caiyi',compact('items'));
+
+    }
+    public function caiyi_detail($category,$id){
+        $items = DB::table('caiyis')->where("category",$category)->where('id',$id)->first();
+        $itemslist = DB::table('caiyis')->where("category",$category)->orderBy('created_at','desc')->get();
+        return view('caiyi_detail',compact('items','itemslist'));
     }
 
 }

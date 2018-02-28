@@ -116,7 +116,8 @@ Route::group(['prefix' => 'health'], function () {
 
 //才艺展示
 Route::group(['prefix' => 'caiyi'], function () {
-    Route::get('jianzhi/',['as'=>'jianhzi','uses'=>'Controller@caiyi_show']);
+    Route::get('{category}/',['as'=>'caiyi','uses'=>'Controller@caiyi_show']);
+    Route::get('/{category}/{id}/describe',['as'=>'caiyi_detail','uses'=>'Controller@caiyi_detail']);
 });
 
 

@@ -95,10 +95,10 @@
                         <div class="a_nr_list">
                             <h2>广告服务热线：</h2>
 
-                            <p class="a_sj">  邮箱：<a href="mailto:czgw@jf.com">1669191156@qq.com</a></p>
+                            <p class="a_sj">  邮箱：<a href="mailto:czgw@jf.com">544633067@qq.com</a></p>
                             <p class="a_sj">  联系人：张先生</p>
                             <p class="a_sj"> <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2949246001&amp;site=qq&amp;menu=yes" target="_blank">
-                                    <img border="0" title="立即联系广告服务" alt="立即联系广告服务" src="http://wpa.qq.com/pa?p=2:1669191156:51">
+                                    <img border="0" title="立即联系广告服务" alt="立即联系广告服务" src="http://wpa.qq.com/pa?p=2:544633067:51">
                                 </a> </p>
                             <!--p></p><p></p>
                             <span class="a_ppt"><a href="喜啦啦宝贝网刊例价.xls">喜啦啦宝贝新刊例价下载</a></span-->

@@ -1,6 +1,6 @@
 @extends('master')
 @section('title')
-    儿童健康——{{ $items[0]->category }}
+    儿童健康—{{ $items[0]->category }}
 @stop
 @section('content')
 
@@ -8,7 +8,7 @@
 
     <div class="t_m pb16">
         <div class="t_m_z">
-            <div class="t_lb_t"><a href="/">首页</a>&nbsp;&gt;&nbsp;<a href="/">儿童健康</a>&nbsp;&gt;&nbsp;<a href="/ertongjiankang/huxixitong/">{{ $items[0]->category }}</a></div>
+            <div class="t_lb_t"><a href="/">首页</a>&nbsp;&gt;&nbsp;<a href="/">儿童健康</a>&nbsp;&gt;&nbsp;<a href="/health/huxixitong/">{{ $items[0]->category }}</a></div>
         </div>
         <div class="t_auto pb16" id="Mhead2_0" style="display: block;">
             <dl class="txt_box">
