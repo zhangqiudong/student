@@ -16,7 +16,7 @@
         <li class="triangle"><a href="#">多才多艺</a>
             <ul class="sub_menu">
                 <li><a href="/caiyi/shougong">创意手工</a></li>
-                <li><a href="/caiyi/shoubao">手抄报</a></li>
+                <li><a href="/caiyi/shouchaobao">手抄报</a></li>
                 <li><a href="/caiyi/jianzhi">剪纸大全</a></li>
                 <li><a href="/caiyi/huanbao">废物利用</a></li>
             </ul>
@@ -24,7 +24,7 @@
         <style  rel="stylesheet">
             ul.sub_menu li:hover{background: #aef}
         </style>
-        <li role="presentation"><a href="/stu_help/">家教辅导</a></li>
+        <li role="presentation" ><a id="tech_help" href="/stu_help/">家教辅导</a></li>
         <li class="triangle stu_health"><a href="#">儿童健康</a>
             <ul class="sub_menu">
                 <li><a href="/health/breath/">呼吸系统</a></li>

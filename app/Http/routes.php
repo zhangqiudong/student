@@ -30,13 +30,15 @@ Route::get('/news/{id}/detail',['as'=>'news_detail','uses'=>'Controller@news_det
 Route::get('/infos/list',['as'=>'infos_list','uses'=>'Controller@infos_list']);
 Route::get('/infos/{id}/detail',['as'=>'infos_detail','uses'=>'Controller@infos_detail']);
 
-
+//登录注册
 Route::get('login',['middleware'=>'guest','as'=>'login','uses'=>'loginController@loginGet']);
-Route::post('login', [
-    'middleware' => 'guest', 'uses' => 'loginController@loginPost']);
-Route::get('logout', [
-    'middleware' => 'auth', 'as' => 'logout', 'uses' => 'loginController@logout']);
+Route::post('login', ['middleware' => 'guest', 'uses' => 'loginController@loginPost']);
+Route::get('logout', ['middleware' => 'auth', 'as' => 'logout', 'uses' => 'loginController@logout']);
 
+Route::post('registerPost', [ 'middleware'=>'guest','uses' => 'loginController@registerPost']);
+Route::get('register',['middleware'=>'guest','as'=>'register','uses'=>'loginController@registerGet']);
+//生成验证码
+Route::get('/index/captcha/{tmp}', 'loginController@captcha');
 //sudent operation学生操作
 //下载作业
 Route::get('stu/download/', [

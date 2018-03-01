@@ -3,7 +3,8 @@
     家教辅导
 @stop
 @section('content')
-
+<script src="/layer/js/jquery-1.9.2.min.js"></script>
+<script src="/layer/layer/layer.js"></script>
     <div class="line_row"></div>
 
     <div class="t_m pb16">
@@ -12,38 +13,41 @@
         </div>
         <div class="t_auto pb16" id="Mhead2_0" style="display: block;">
             <dl class="txt_box">
+                <style rel="stylesheet">
+                    .txt_box dd{height: auto;}
+                </style>
                 <dd>
-                    <a href="/shiwangeweishime/qimiaoderenti/2017-08-30/99824.html" target="_blank" title="电池为什么不会电人？">1.电池为什么不会电人？</a>
+                    <a href="" onclick="alerttip()" target="_blank" title="1. They’re _________ (health) for me.">1. They’re _________ (health) for me. </a>
                     <span>2017-08-30</span>
                     <span></span>
                 </dd><dd>
-                    <a href="/shiwangeweishime/qimiaoderenti/2016-11-04/72582.html" target="_blank" title="眼泪为什么是咸的？">63.眼泪为什么是咸的？</a>
+                    <a href="" target="_blank" title="">2.当你想尝试做一件事情时，可以说：_______(   )  A.I can try it.      B. I’d like to have a try.</a>
                     <span>2016-11-04</span>
                 </dd><dd>
-                    <a href="/shiwangeweishime/qimiaoderenti/2016-11-11/72722.html" target="_blank" title="为什么冬天有些人的耳朵和手会生冻疮">64.为什么冬天有些人的耳朵和手会生冻疮</a>
+                    <a href="" target="_blank" title="">3. --- _______is your favourite day? (   ) </br>--- Monday.</br>A. What        B. How        C. How day        D. Who</a>
                     <span>2016-11-11</span>
                 </dd><dd>
-                    <a href="/shiwangeweishime/qimiaoderenti/2016-11-14/72804.html" target="_blank" title="为什么奔跑时心脏会剧烈地跳动">65.为什么奔跑时心脏会剧烈地跳动</a>
+                    <a href="" target="_blank" title="">4.三角形的底是5分米，高是4分米。和它等底等高的平行四边形的面积是（ ）.</br>A、10平方厘米 B、20平方厘米 C、40平方厘米  </a>
                     <span>2016-11-14</span>
                 </dd><dd>
-                    <a href="/shiwangeweishime/qimiaoderenti/2016-11-14/72816.html" target="_blank" title="我们吃下去的东西跑到哪儿去了">66.我们吃下去的东西跑到哪儿去了</a>
+                    <a href="" target="_blank" title="">5.下列各数中，既是偶数，又是质数的数是 </br>A、2 B、7 C、6</a>
                     <span>2016-11-14</span>
                 </dd><dd>
-                    <a href="/shiwangeweishime/qimiaoderenti/2016-11-11/72702.html" target="_blank" title="开发右脑有什么好处">67.开发右脑有什么好处</a>
+                    <a href="" target="_blank" title="">6.一根长15厘米的绳子，把它剪成每段长3厘米的小段，能剪（      ）段；
+                        需要剪（       ）次。 </a>
                     <span>2016-11-11</span>
                 </dd><dd>
-                    <a href="/shiwangeweishime/qimiaoderenti/2016-11-03/72457.html" target="_blank" title="蹈火舞者的脚为何不会被灼伤">68.蹈火舞者的脚为何不会被灼伤</a>
+                    <a href="" target="_blank" title="">7.以下面的点为顶点，分别画出一个直角、一个锐角和一个钝角。</a>
                     <span>2016-11-03</span>
                 </dd><dd>
-                    <a href="/shiwangeweishime/qimiaoderenti/2016-11-11/72719.html" target="_blank" title="为什么伤口碰到咸的东西会格外痛">69.为什么伤口碰到咸的东西会格外痛</a>
+                    <a href="/shiwangeweishime/qimiaoderenti/2016-11-11/72719.html" target="_blank" title="">8.3平方米＝（     ）平方分米     600平方厘米＝（     ）平方分米</a>
                     <span>2016-11-11</span>
                 </dd><dd>
-                    <a href="/shiwangeweishime/qimiaoderenti/2016-11-14/72807.html" target="_blank" title="为什么碰伤的皮肤处会有乌青块">70.为什么碰伤的皮肤处会有乌青块</a>
+                    <a href="" target="_blank" title="">9.五、画一画、算一算<br/>下面每个方格的边长表示1厘米。<br/>
+                         在方格纸上，分别画出一个周长是12厘米的长方形和正方形。</a>
                     <span>2016-11-14</span>
                 </dd></dl>
         </div>
-        <div class="h6"></div>
-        <div class="t_fy"><span>1</span><a href="/shiwangeweishime/qimiaoderenti/index_2.html" class="c_page">2</a><a href="/shiwangeweishime/qimiaoderenti/index_3.html" class="c_page">3</a><a href="/shiwangeweishime/qimiaoderenti/index_4.html" class="c_page">4</a><a href="/shiwangeweishime/qimiaoderenti/index_5.html" class="c_page">5</a><a href="/shiwangeweishime/qimiaoderenti/index_6.html" class="c_page">6</a><a href="/shiwangeweishime/qimiaoderenti/index_7.html" class="c_page">7</a><a href="/shiwangeweishime/qimiaoderenti/index_8.html" class="c_page">8</a><a href="/shiwangeweishime/qimiaoderenti/index_9.html" class="c_page">9</a><a href="/shiwangeweishime/qimiaoderenti/index_10.html" class="c_page">10</a>&nbsp;<a href="/shiwangeweishime/qimiaoderenti/index_2.html" class="nextpage">下一页</a></div>
     </div>
 
 
@@ -72,7 +76,7 @@
             </div>
             <div class="shang_info">
                 <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
-                <p>Powered by <a href="http://www.jinliniuan.com" target="_blank" title="金林苑">金林苑</a>，分享从这里开始，精彩与您同在</p>
+                <p>Powered by <a href="http://www.jinliniuan.com" target="_blank" title="喜啦啦">喜啦啦</a>，分享从这里开始，精彩与您同在</p>
             </div>
         </div>
     </div>
@@ -89,6 +93,25 @@
             $(".hide_box").fadeToggle();
             $(".shang_box").fadeToggle();
         }
+    </script>
+
+    <script >
+        $(function () {
+            $('.txt_box dd a').each(function () {
+                $(this).attr("href","javascript:void(0)");
+                $(this).click(function () {
+                    layer.msg('小主，赏点散碎银子吧！', {icon: 6});
+                })
+            })
+
+        })
+
+//
+//      function alerttip() {
+//          layer.msg('小主，赏一点吧！', {icon: 6});
+//      }
+
+
     </script>
     <style type="text/css">
         .content{width:80%;margin:200px auto;}

@@ -157,10 +157,14 @@ class Controller extends BaseController
 
 //才艺展示
     public function caiyi_show($category){
-        if ($category == "jianzhi"){ $category ="折纸大全";}
-        else if ($category == "shouchaobao"){ $category ="手抄报";}
-        else if ($category == "shougong"){ $category ="创意手工";}
-        else if ($category == "liyong"){ $category ="废物利用";}
+        if ($category == "zhezhi"){ $category ="折纸大全";}
+        else if ($category == "shouchaobao"){ $category ="手抄报大全";}
+        else if ($category == "jianzhi"){ $category ="折纸大全";}
+        else if ($category == "shougong"){ $category ="创意手工大全";}
+        else if ($category == "huanbao"){ $category ="废物利用";}
+        else if ($category == "heibanbao"){ $category ="黑板报大全";}
+        else if ($category == "xiangpini"){ $category ="彩泥橡皮泥";}
+        else if ($category == "bianzhi"){ $category ="手工编织";}
 
         else { $category ="其他";}
         $items = DB::table('caiyis')->where("category",$category)->orderBy('created_at','desc')->get();

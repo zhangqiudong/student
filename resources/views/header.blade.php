@@ -6,7 +6,7 @@
         </div>
         <div class="span4">
             <ul class="nav nav-pills" style="float: right;">
-                <li role="presentation"><a href="#">注册</a></li>
+                <li role="presentation"><a href="{{route('register')}}">注册</a></li>
                 {{--<li role="presentation"><a href="#">登陆</a></li>--}}
                 @if (Auth::guest())
                     <li role="presentation"><a href="{{route('login')}}">登陆</a></li>

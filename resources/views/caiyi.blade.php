@@ -13,14 +13,14 @@
             </div>
             <div class="t_auto pb16" id="Mhead1_0" style="display: block;">
                 <ul class="t_dh_tab">
-                    <li><a href="/caiyi/zhezhidaquan/">折纸大全</a></li>
-                    <li><a href="/caiyi/shouchaobaodaquan/">手抄报大全</a></li>
-                    <li><a href="/caiyi/">黑板报大全</a></li>
+                    <li><a href="/caiyi/zhezhi/">折纸大全</a></li>
+                    <li><a href="/caiyi/shouchaobao/">手抄报大全</a></li>
+                    <li><a href="/caiyi/heibanbao">黑板报大全</a></li>
                     <li><a href="/caiyi/jianzhi">剪纸大全</a></li>
-                    <li><a href="//www.tom61.com/shougongzhizuo/cainixiangpini/">彩泥橡皮泥</a></li>
-                    <li><a href="//www.tom61.com/shougongzhizuo/chuangyishougongdaquan/">创意手工大全</a></li>
-                    <li><a href="//www.tom61.com/shougongzhizuo/feiwuliyong/">废物利用</a></li>
-                    <li><a href="//www.tom61.com/shougongzhizuo/shougongbianzhi/">手工编织</a></li>
+                    <li><a href="/caiyi/xiangpini/">彩泥橡皮泥</a></li>
+                    <li><a href="/caiyi/shougong">创意手工大全</a></li>
+                    <li><a href="/caiyi/huanbao/">废物利用</a></li>
+                    <li><a href="/caiyi/bianzhi">手工编织</a></li>
                 </ul>
             </div>
             <div class="clear"></div>
